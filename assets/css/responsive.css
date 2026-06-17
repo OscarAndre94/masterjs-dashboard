@@ -8,7 +8,7 @@
         grid-template-columns: 100%;
     }
 
-    .layout__main{
+    .layout__articles{
         margin-right: 0;
     }
 
@@ -22,11 +22,6 @@
 
     .header__img{
         width: 100%;
-    }
-
-    .login_form-group,
-    .login__submit{
-        width: 65%;
     }
 }
 
@@ -44,5 +39,39 @@
 
     .layout__slider{
         height: 30rem;
+    }
+}
+
+@media (max-width: 500px){
+    .logo__text{
+        font-size: 3.5rem;
+    }
+
+    .layout__slider{
+        height: 22rem;
+    }
+
+    .login_form-group,
+    .login__submit{
+        width: 65%;
+    }
+
+    .footer{
+        flex-direction: column;
+        gap: 2rem;
+    }
+}
+
+@media (max-width: 400px){
+    .logo__text{
+        font-size: 2.5rem;
+    }
+
+    .layout__slider{
+        height: 16rem;
+    }
+
+    .footer{
+        font-size: 1.4rem;
     }
 }
