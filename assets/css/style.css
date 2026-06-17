@@ -169,6 +169,63 @@ body{
     background-color: var(--color-light);
 }
 
+/*ESTILOS BARRA LATERAL*/
 .layout__aside{
     grid-area: aside;
+}
+
+.aside__header{
+    margin-bottom: 4rem;
+}
+
+.header__container-title{
+    margin-bottom: 2rem;
+}
+
+.header__title,
+.login__title{
+    text-align: center;
+    line-height: 1rem;
+    background: url("../img/lines.png") repeat-x;
+}
+
+.title__span{
+    background-color: var(--bg-layout);
+    padding: 0.5rem;
+}
+
+.login__span{
+    background-color: var(--bg-layout);
+    padding: 0.5rem;
+}
+
+.header__description{
+    font-size: 1.5rem;
+    padding: 0.5rem;
+}
+
+.aside__login{
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.login__container-title{
+    margin-bottom: 1.5rem;
+}
+
+.login__form-group{
+    display: flex;
+    gap: 0.5rem;
+}
+
+.login__input{
+    width: 100%;
+    border: 2px solid var(--color-shadow);
+    outline: none;
+    transition: all 300ms linear;
+}
+
+.login__input:focus{
+    border-color: var(--color-primary);
 }
