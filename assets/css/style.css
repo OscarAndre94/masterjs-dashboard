@@ -19,6 +19,10 @@ body{
     "slider slider"
     "main aside";
     grid-template-columns: 70% 30%;
+    max-width: 128rem;
+    background-color: white;
+    padding: 3rem;
+    margin:  2rem auto;
 }
 
 .layout__header{
