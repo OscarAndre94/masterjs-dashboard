@@ -1,5 +1,11 @@
 /*ESTILOS GENERALES*/
 
+:root{
+    --bg-layout: white;
+    --color-primary: #1F87C4;
+    --color-text-logo: white; 
+}
+
 html{
     font-size: 10px;
 }
@@ -20,13 +26,26 @@ body{
     "main aside";
     grid-template-columns: 70% 30%;
     max-width: 128rem;
-    background-color: white;
+    background-color: var(--bg-layout);
     padding: 3rem;
     margin:  2rem auto;
 }
 
+/*ESTILOS DE CABECERA*/
 .layout__header{
     grid-area: header;
+}
+
+.header__logo{
+    display: inline-block;
+    margin-bottom: 2rem;
+    padding: 0.5rem 1.5rem;
+    background-color: var(--color-primary);
+}
+
+.logo__text{
+    color: var(--color-text-logo);
+    font-size: 5rem;
 }
 
 .layout__slider{
