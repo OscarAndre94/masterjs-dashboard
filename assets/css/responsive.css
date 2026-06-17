@@ -1,0 +1,31 @@
+@media (max-width: 956px){
+    .layout{
+        grid-template-areas: 
+        "header header"
+        "slider slider"
+        "main main"
+        "aside aside";
+        grid-template-columns: 100%;
+    }
+
+    .layout__main{
+        margin-right: 0;
+    }
+
+    .layout__aside{
+        margin-top: 4rem;
+    }
+
+    .header__container-img{
+        width: 100%;
+    }
+
+    .header__img{
+        width: 100%;
+    }
+
+    .login_form-group,
+    .login__submit{
+        width: 65%;
+    }
+}
