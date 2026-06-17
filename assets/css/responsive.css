@@ -29,3 +29,20 @@
         width: 65%;
     }
 }
+
+@media (max-width: 696px){
+    .header__nav{
+        height: auto;
+        padding: 2rem;
+    }
+
+    .nav__list{
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .layout__slider{
+        height: 30rem;
+    }
+}
