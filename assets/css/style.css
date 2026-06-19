@@ -448,3 +448,35 @@ body{
 .theme__blue{
     background-color: #3C93C8;
 }
+
+.theme__green--active{
+    --color-primary: #225d51;
+    --color-light: #2b7264;
+}
+
+.theme__red--active{
+    --color-primary: #C14C39;
+    --color-light: #d65541;
+}
+
+.theme__blue--active{
+    --color-primary: #3C93C8;
+    --color-light: #55ade4;
+}
+
+.theme__green--active > body{
+    background-image: url("../img/hojas.jpg");
+}
+
+.theme__red--active > body{
+    background-image: url("../img/rojo.jpg");
+}
+
+.theme__blue--active > body{
+    background-image: url("../img/cielo.jpg");
+}
+
+.article__btn:hover{
+    background-color: var(--color-light);
+}
+
