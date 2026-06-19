@@ -2,19 +2,37 @@ import { SliderComponente } from "./slider.js"; // Conecta con el hijo
 import { ArticlesComponente } from "./articles.js"; 
 import { ScrollTopComponente } from "./scroll.js";
 import { LoginComponente } from "./login.js";
+import { AccordionComponente } from "./accordion.js";
 
 document.addEventListener("DOMContentLoaded", () => {
-    const miSlider = new SliderComponente(".layout__slider"); // Crea el objeto
-    miSlider.inicializar(); // Inicializo y me comunico con el objeto del Padre
+    //Incializador de sliders
+    if (document.querySelector(".layout__slider")) {
+        const miSlider = new SliderComponente(".layout__slider"); 
+        miSlider.inicializar(); 
+    }
 
     //Inicializador de articulos
-    const misArticulos = new ArticlesComponente(".layout__articles");
-    misArticulos.inicializar();
+    if (document.querySelector(".layout__articles")) {
+        const misArticulos = new ArticlesComponente(".layout__articles");
+        misArticulos.inicializar();
+    }
 
     //Inicializador de evento Scroll
-    const miScroll = new ScrollTopComponente(".footer__top"); 
-    miScroll.inicializar();
+    if(document.querySelector(".footer__top")){
+        const miScroll = new ScrollTopComponente(".footer__top"); 
+        miScroll.inicializar();
+    }
+    
 
-    const miLogin = new LoginComponente(".layout__aside");
-    miLogin.inicializar();
+    //Incializador de Login
+    if (document.querySelector(".layout__aside")) {
+        const miLogin = new LoginComponente(".layout__aside");
+        miLogin.inicializar();
+    }
+
+    //Inicializador de Acordeón
+    if (document.querySelector(".main__accordion")) {
+        const miAcordeon = new AccordionComponente(".main__accordion");
+        miAcordeon.inicializar();
+    }
 });
