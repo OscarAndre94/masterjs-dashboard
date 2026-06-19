@@ -26,6 +26,7 @@ export class LoginComponente extends ComponenteWeb {
             loginForm.classList.add("aside__login--hide");
             asideData.classList.remove("aside__data--hide");
             } else {
+                if (loginName) loginName.innerHTML = "";
                 loginForm.classList.remove("aside__login--hide");
                 asideData.classList.add("aside__data--hide");
         }
