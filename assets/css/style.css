@@ -321,9 +321,8 @@ body{
     background-color: white;
     border: 1px solid var(--color-shadow);
     border-top: none;
-    border-bottom: none;
     border-radius: 0 0 5px 5px;
-    transition: all 700ms ease-in-out;
+    transition: max-height 700ms ease-in-out;
 }
 
 .collapse__text{
@@ -333,5 +332,20 @@ body{
 .accordion__collapse--open .collapse__body{
     max-height: 999px;
     border-bottom: 1px solid var(--color-shadow);
-    transition: all 1s ease-in-out;
+    transition: max-height 700ms ease-in-out;
+}
+
+.accordion__collapse--open .collapse__header{
+    border-radius: 0.5rem 0.5rem 0 0;
+    border-bottom: none;
+    color: white;
+    background-color: var(--color-primary);
+}
+
+.accordion__collapse--open .fa-chevron-down{
+    opacity: 0;
+}
+
+.accordion__collapse--open .fa-chevron-up{
+    opacity: 1;
 }
