@@ -5,6 +5,7 @@ import { LoginComponente } from "./login.js";
 import { AccordionComponente } from "./accordion.js";
 import { ClockComponente } from "./clock.js";
 import { ContactoComponente } from "./contact.js";
+import { TemaComponente } from "./themes.js";
 
 document.addEventListener("DOMContentLoaded", () => {
     //Incializador de sliders
@@ -44,8 +45,15 @@ document.addEventListener("DOMContentLoaded", () => {
         miReloj.inicializar();
     }
 
+    //Inicializador de contacto
     if(document.querySelector(".main__contact")){
         const miContacto = new ContactoComponente(".main__contact");
         miContacto.inicializar();
+    }
+
+    //Inicializador de cambiador de temas
+    if(document.querySelector(".themes")){
+        const miTema = new TemaComponente(".themes");
+        miTema.inicializar();
     }
 });
