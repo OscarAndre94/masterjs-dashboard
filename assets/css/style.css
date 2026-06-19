@@ -410,3 +410,41 @@ body{
     border-radius: 5px;
     margin-top: 0.5rem;
 }
+
+/*ESTILOS PARA LOS TEMAS*/
+
+.themes{
+    width: 5rem;
+    height: 12rem;
+    position: fixed;
+    left: 0;
+    top: 45%;
+    padding: 0.5rem 1rem;
+    background-color: #333;
+    opacity: 0.8;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.themes > div{
+    width: 100%;
+    height: 3rem;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.theme__green{
+    background-color: #225d51;
+}
+
+
+.theme__red{
+    background-color: #C14C39;
+}
+
+
+.theme__blue{
+    background-color: #3C93C8;
+}
