@@ -349,3 +349,16 @@ body{
 .accordion__collapse--open .fa-chevron-up{
     opacity: 1;
 }
+
+/*ESTILOS PARA EL RELOJ*/
+
+.main__clock{
+    width: 100%;
+    border: 5px dashed var(--bg-nav);
+}
+
+.clock__time{
+    font-size: 8rem;
+    font-weight: bold;
+    text-align: center;
+}
