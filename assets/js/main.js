@@ -4,6 +4,7 @@ import { ScrollTopComponente } from "./scroll.js";
 import { LoginComponente } from "./login.js";
 import { AccordionComponente } from "./accordion.js";
 import { ClockComponente } from "./clock.js";
+import { ContactoComponente } from "./contact.js";
 
 document.addEventListener("DOMContentLoaded", () => {
     //Incializador de sliders
@@ -37,8 +38,14 @@ document.addEventListener("DOMContentLoaded", () => {
         miAcordeon.inicializar();
     }
 
+    //Inicializador de reloj
     if (document.querySelector(".main__clock")){
         const miReloj = new ClockComponente(".main__clock");
         miReloj.inicializar();
+    }
+
+    if(document.querySelector(".main__contact")){
+        const miContacto = new ContactoComponente(".main__contact");
+        miContacto.inicializar();
     }
 });
