@@ -261,3 +261,11 @@ body{
 .footer__top{
     cursor: pointer;
 }
+
+.aside__data--hide{
+    display: none;
+}
+
+.aside__login--hide{
+    display: none;
+}
